@@ -5,15 +5,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="daa9c3fc-aebe-4e95-9189-a20efe74fef3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/kth/iv1350/seminarium3/pointofsale/exceptions/ItemNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/kth/iv1350/seminarium3/pointofsale/exceptions/ServerConnectionFailedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/kth/iv1350/seminarium3/pointofsale/integration/observer/Observer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/kth/iv1350/seminarium3/pointofsale/integration/stock/Cucumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/kth/iv1350/seminarium3/pointofsale/integration/stock/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/kth/iv1350/seminarium3/pointofsale/integration/stock/Soap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/kth/iv1350/seminarium3/pointofsale/integration/stock/Stock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/kth/iv1350/seminarium3/pointofsale/logAPI/TotalRevenueFileOutput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/kth/iv1350/seminarium3/pointofsale/view/TotalRevenueView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/kth/iv1350/seminarium3/pointofsale/DTO/ItemDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/kth/iv1350/seminarium3/pointofsale/DTO/ItemDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/kth/iv1350/seminarium3/pointofsale/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/kth/iv1350/seminarium3/pointofsale/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/kth/iv1350/seminarium3/pointofsale/integration/AccountingDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/kth/iv1350/seminarium3/pointofsale/integration/AccountingDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/kth/iv1350/seminarium3/pointofsale/integration/InventoryDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/kth/iv1350/seminarium3/pointofsale/integration/InventoryDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/kth/iv1350/seminarium3/pointofsale/integration/Printer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/kth/iv1350/seminarium3/pointofsale/integration/Printer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/kth/iv1350/seminarium3/pointofsale/model/Receipt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/kth/iv1350/seminarium3/pointofsale/model/Receipt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/kth/iv1350/seminarium3/pointofsale/model/Sale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/kth/iv1350/seminarium3/pointofsale/model/Sale.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/kth/iv1350/seminarium3/pointofsale/startup/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/kth/iv1350/seminarium3/pointofsale/startup/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/kth/iv1350/seminarium3/pointofsale/view/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/kth/iv1350/seminarium3/pointofsale/view/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/se/kth/iv1350/seminarium3/pointofsale/controller/ControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/se/kth/iv1350/seminarium3/pointofsale/controller/ControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/se/kth/iv1350/seminarium3/pointofsale/integration/InventoryDatabaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/se/kth/iv1350/seminarium3/pointofsale/integration/InventoryDatabaseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2F2EDhIQ0ylPzk8mLVTMqW1bKXw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -21,12 +55,114 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="se.kth.iv1350.seminarium3.pointofsale.integration" />
+      <recent name="se.kth.iv1350.seminarium3.pointofsale.model" />
+      <recent name="se.kth.iv1350.seminarium3.pointofsale.controller" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="se.kth.iv1350.seminarium3.pointofsale.startup.Main" />
+      <module name="pointofsale" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="se.kth.iv1350.seminarium3.pointofsale.startup.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pointofsale" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="se.kth.iv1350.seminarium3.pointofsale.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="se.kth.iv1350.seminarium3.pointofsale.controller" />
+      <option name="MAIN_CLASS_NAME" value="se.kth.iv1350.seminarium3.pointofsale.controller.ControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ControllerTest.endSaleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pointofsale" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="se.kth.iv1350.seminarium3.pointofsale.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="se.kth.iv1350.seminarium3.pointofsale.controller" />
+      <option name="MAIN_CLASS_NAME" value="se.kth.iv1350.seminarium3.pointofsale.controller.ControllerTest" />
+      <option name="METHOD_NAME" value="endSaleTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InventoryDatabaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pointofsale" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="se.kth.iv1350.seminarium3.pointofsale.integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="se.kth.iv1350.seminarium3.pointofsale.integration" />
+      <option name="MAIN_CLASS_NAME" value="se.kth.iv1350.seminarium3.pointofsale.integration.InventoryDatabaseTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SaleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pointofsale" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="se.kth.iv1350.seminarium3.pointofsale.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="se.kth.iv1350.seminarium3.pointofsale.model" />
+      <option name="MAIN_CLASS_NAME" value="se.kth.iv1350.seminarium3.pointofsale.model.SaleTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.ControllerTest" />
+        <item itemvalue="JUnit.InventoryDatabaseTest" />
+        <item itemvalue="JUnit.SaleTest" />
+        <item itemvalue="JUnit.ControllerTest.endSaleTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -43,7 +179,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
