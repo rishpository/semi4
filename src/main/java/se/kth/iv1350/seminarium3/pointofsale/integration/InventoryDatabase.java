@@ -34,7 +34,8 @@ public class InventoryDatabase {
         return this.stockOfSoap;
     }
 
-    public ItemDTO fetchItemInformation(int scannedItemID) {
+    public ItemDTO fetchItemInformation(int scannedItemID) throws
+            ItemNotFoundException, ServerConnectionFailedException {
         int itemID;
         int itemPrice;
         int itemTax;
@@ -59,8 +60,12 @@ public class InventoryDatabase {
                 itemTax = 6;
                 itemDTO = new ItemDTO(itemID, itemPrice, itemTax, itemName, itemDescription);
                 break;
+            case 3:
+                throw new ServerConnectionFailedException("The server is currently not responding. " +
+                        "Please try again later.");
             default:
-                itemDTO = new ItemDTO(0,0, 0, (String)null, (String)null);
+                throw new ItemNotFoundException("Item with item ID: " + scannedItemID + " does not exist. " +
+                        "Please type in another ID.");
 
 
         }

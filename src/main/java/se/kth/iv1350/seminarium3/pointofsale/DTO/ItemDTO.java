@@ -16,7 +16,7 @@ public class ItemDTO {
     }
 
     public int getItemPrice() {
-        return itemPrice;
+        return this.itemPrice;
     }
 
     public int getItemTax() {

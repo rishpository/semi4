@@ -5,6 +5,7 @@ import se.kth.iv1350.seminarium3.pointofsale.model.Sale;
 import java.util.ArrayList;
 import java.util.List;
 
+
 /**
  * Calls to external accounting system.
  * The ensuing information is hardcoded for this application
@@ -43,6 +44,7 @@ public class AccountingDatabase {
     public void updateAccountingDatabase(Sale sale, int amountPayment) {
         if (amountPayment >= sale.getTotalPriceAndTax()) {
             this.balanceInCashRegister += sale.getTotalPrice() + sale.getTaxForEntirePurchase();
+            notifyAllObservers();
         }
     }
 

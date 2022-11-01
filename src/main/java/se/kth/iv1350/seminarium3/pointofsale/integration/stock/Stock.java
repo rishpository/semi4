@@ -33,7 +33,7 @@ public class Stock {
      * @return the product's DTO with matching ID as the ID parameter
      */
     public ItemDTO getProduct(int itemID) {
-        for (int i = 0; i < products.size(); i++) {
+        for (int i = 0; i < products.size(); ++i) {
             if (getitemIDOfCurrentCheckedItem(i) == itemID)
                 return products.get(i).getDTO();
         }

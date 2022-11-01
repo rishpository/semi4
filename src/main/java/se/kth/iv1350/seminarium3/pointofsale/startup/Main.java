@@ -63,11 +63,12 @@ public class Main {
                         try {
                             contr.addItemToSale(3);
                         } catch (ItemNotFoundException e){
-                            System.out.println(e.getMessage());
-                            System.out.println("Log: ItemNotFoundException was thrown due to " + e.getMessage());
+                            //System.out.println(e.getMessage());
+                            //System.out.println("LOG: ItemNotFoundException was thrown due to " + e.getMessage());
+                            System.out.println("TESTING");
                         } catch (ServerConnectionFailedException p) {
                             System.out.println(p.getMessage());
-                            System.out.println("Log: Server connection issue." +
+                            System.out.println("LOG: Server connection issue." +
                                     " Item was not added to sale.");
                     }
                           break;
@@ -76,7 +77,7 @@ public class Main {
                         int totalPriceWithTax = contr.endSale();
                         int totalPayment = 0;
 
-                        System.out.println("The total cost is: " + totalPriceWithTax + "SEK.");
+                        System.out.println("The total cost is: " + totalPriceWithTax + " SEK.");
                         System.out.println("Enter payment amount:");
                         int payment = sc.nextInt();
                         totalPayment += payment;
@@ -99,10 +100,11 @@ public class Main {
                             contr.addItemToSale(0);
                         } catch (ItemNotFoundException e) {
                             System.out.println(e.getMessage());
-                            System.out.println("Log: ItemNotFoundException was thrown due to " + e.getMessage());
+                            System.out.println("LOG: ItemNotFoundException was thrown due to " + e.getMessage());
+                            //System.out.println("Item ID does not exist. Please enter another ID.");
                         } catch (ServerConnectionFailedException p) {
                             System.out.println(p.getMessage());
-                            System.out.println("Log: Server connection issue." +
+                            System.out.println("LOG: Server connection issue." +
                                     " Item was not added to sale.");
                         }
                         break;

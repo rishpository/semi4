@@ -5,5 +5,5 @@ package se.kth.iv1350.seminarium3.pointofsale.integration.observer;
  */
 public interface Observer {
 
-    public void update (int totalRevenue);
+    public void update (int var1);
 }

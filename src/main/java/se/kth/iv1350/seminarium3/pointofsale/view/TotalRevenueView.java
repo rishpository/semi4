@@ -6,7 +6,8 @@ public class TotalRevenueView implements Observer {
 
     @Override
     public void update(int totalRevenue) {
-        System.out.println("The current total revenue is " + totalRevenue);
+        System.out.println(" ");
+        System.out.println("The current total revenue has been updated.");
     }
 
 }

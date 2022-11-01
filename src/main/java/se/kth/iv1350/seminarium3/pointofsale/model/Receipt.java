@@ -82,11 +82,11 @@ public class Receipt {
     }
 
     public void addStockOfCucumbers() {
-        ++this.stockOfCucumbers;
+        this.stockOfCucumbers++;
     }
 
     public void addStockOfSoap() {
-        ++this.stockOfSoap;
+        this.stockOfSoap++;
     }
 
     /**
@@ -96,7 +96,7 @@ public class Receipt {
      */
 
     public void addSameItemToReceipt(ItemDTO itemDTO) {
-        ++this.totalNumberOfGoods;
+        this.totalNumberOfGoods += 1;
         this.totalTax += itemDTO.getItemTax();
         this.totalPriceAndTax += itemDTO.getItemPrice() + itemDTO.getItemTax();
         this.totalPrice += itemDTO.getItemPrice();

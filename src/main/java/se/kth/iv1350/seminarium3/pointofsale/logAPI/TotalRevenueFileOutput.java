@@ -10,6 +10,9 @@ import java.io.BufferedWriter;
  */
 public class TotalRevenueFileOutput implements Observer {
 
+    public TotalRevenueFileOutput() {
+
+    }
     /**
      * Writes over the total revenue to the created text file
      * @param totalRevenue is the total revenue

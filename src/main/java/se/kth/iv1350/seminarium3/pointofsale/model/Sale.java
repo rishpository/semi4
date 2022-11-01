@@ -1,21 +1,21 @@
 package se.kth.iv1350.seminarium3.pointofsale.model;
 
 import se.kth.iv1350.seminarium3.pointofsale.DTO.ItemDTO;
-
 import java.time.LocalTime;
 import java.util.ArrayList;
-import se.kth.iv1350.seminarium3.pointofsale.DTO.ItemDTO;
+import java.util.Collections;
+import java.util.List;
 import se.kth.iv1350.seminarium3.pointofsale.integration.Printer;
 
 /**
  * The sale and the different parameters that make up the sale.
  */
 public class Sale {
-    private LocalTime timeOfSale = LocalTime.now();
+    private LocalTime timeOfSale;
     private Receipt receipt;
     private int totalPrice;
     private int totalNumberOfGoods;
-    private ArrayList<ItemDTO> itemDTOArrayList = new ArrayList();
+    private ArrayList<ItemDTO> itemDTOArrayList = new ArrayList<ItemDTO>();
     private int amountChange;
     private int taxForEntirePurchase;
     private int totalPriceAndTax;
@@ -27,20 +27,21 @@ public class Sale {
      */
     public Sale() {
         this.receipt = new Receipt(this.timeOfSale);
+        timeOfSale = LocalTime.now();
     }
 
     /**
      * Getting the amount of soap units in inventory
      */
     public int getStockOfSoap() {
-        return this.stockOfSoap;
+        return stockOfSoap;
     }
 
     /**
      * Getting the amount of cucumbers in inventory
      */
     public int getStockOfCucumbers() {
-        return this.stockOfCucumbers;
+        return stockOfCucumbers;
     }
 
     /**
@@ -101,16 +102,16 @@ public class Sale {
     public void addItemToSale(ItemDTO itemDTO) {
         boolean addNewItem = true;
 
-        for (int i = 0; i < this.itemDTOArrayList.size(); ++i) {
-            if (itemDTO.getItemName().equals(((ItemDTO)this.itemDTOArrayList.get(i)).getItemName())) {
+        for (int i = 0; i < itemDTOArrayList.size(); i++) {
+            if (itemDTO.getItemName().equals(itemDTOArrayList.get(i).getItemName())) {
                 addNewItem = false;
             }
         }
 
         if (itemDTO.getItemName() != null && addNewItem) {
-            this.addNewItemToSale(itemDTO);
+            addNewItemToSale(itemDTO);
         } else if (itemDTO.getItemName() != null) {
-            this.addAnotherScannedItem(itemDTO);
+            addExistingItemToSale(itemDTO);
 
         }
 
@@ -174,11 +175,11 @@ public class Sale {
         }
 
     private void addAnotherScannedItem(ItemDTO itemDTO) {
-            if (itemDTO.getItemName() == "Cucumber") {
-                ++this.stockOfCucumbers;
+            if (itemDTO.getItemName() == ("Cucumber")) {
+                stockOfCucumbers++;
             }
-            else if (itemDTO.getItemName() == "Soap") {
-                ++this.stockOfSoap;
+            else if (itemDTO.getItemName() == ("Soap")) {
+                stockOfSoap++;
             }
         }
 
@@ -195,12 +196,15 @@ public class Sale {
         }
 
         private void addExistingItemToSale(ItemDTO itemDTO) {
-            this.addAnotherScannedItem(itemDTO);
-            ++this.totalNumberOfGoods;
-            this.taxForEntirePurchase += itemDTO.getItemTax();
+            addAnotherScannedItem(itemDTO);
+            totalNumberOfGoods += 1;
+            taxForEntirePurchase += itemDTO.getItemTax();
             this.totalPriceAndTax += itemDTO.getItemPrice() + itemDTO.getItemTax();
             this.totalPrice += itemDTO.getItemPrice();
             this.addScannedItemToReceipt(itemDTO);
+
+            addScannedItemToReceipt(itemDTO);
+            receipt.addSameItemToReceipt(itemDTO);
         }
 
         private void addScannedItemToReceipt(ItemDTO itemDTO) {
